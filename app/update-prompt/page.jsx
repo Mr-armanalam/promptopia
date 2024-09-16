@@ -2,7 +2,6 @@
 
 import Form from "@components/Form";
 import { useRouter, useSearchParams } from "next/navigation";
-import { Suspense } from 'react';
 import { useEffect, useState } from "react";
 
 const EditPrompt = () => {
@@ -55,7 +54,6 @@ const updatePrompt = async (e) => {
 };
 
   return (
-    <Suspense>
     <Form
       type="Edit"
       post={post}
@@ -63,7 +61,6 @@ const updatePrompt = async (e) => {
       submitting={submitting}
       handleSubmit={updatePrompt}
     />
-    </Suspense>
   );
 };
 
