@@ -55,6 +55,7 @@ const updatePrompt = async (e) => {
 };
 
   return (
+    <Suspense>
     <Form
       type="Edit"
       post={post}
@@ -62,6 +63,7 @@ const updatePrompt = async (e) => {
       submitting={submitting}
       handleSubmit={updatePrompt}
     />
+    </Suspense>
   );
 };
 
